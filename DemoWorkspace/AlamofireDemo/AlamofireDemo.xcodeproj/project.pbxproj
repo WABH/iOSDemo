@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		0469B715248775D200A87511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0469B713248775D200A87511 /* Main.storyboard */; };
 		0469B717248775D700A87511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0469B716248775D700A87511 /* Assets.xcassets */; };
 		0469B71A248775D700A87511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0469B718248775D700A87511 /* LaunchScreen.storyboard */; };
+		0469B722248799A600A87511 /* landscape_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0469B721248799A600A87511 /* landscape_1.png */; };
 		B5904BBBFFC3B7DBC7F53EC8 /* Pods_AlamofireDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CE1E35FC542B8BC24A2907 /* Pods_AlamofireDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		0469B716248775D700A87511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0469B719248775D700A87511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0469B71B248775D700A87511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0469B721248799A600A87511 /* landscape_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landscape_1.png; sourceTree = "<group>"; };
 		6AA14AF7D7C0A20BA284EC08 /* Pods-AlamofireDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireDemo.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireDemo/Pods-AlamofireDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C638C4244D7413E45FEE5B44 /* Pods-AlamofireDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireDemo.release.xcconfig"; path = "Target Support Files/Pods-AlamofireDemo/Pods-AlamofireDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 				0469B70D248775D200A87511 /* AppDelegate.swift */,
 				0469B70F248775D200A87511 /* SceneDelegate.swift */,
 				0469B711248775D200A87511 /* ViewController.swift */,
+				0469B721248799A600A87511 /* landscape_1.png */,
 				0469B713248775D200A87511 /* Main.storyboard */,
 				0469B716248775D700A87511 /* Assets.xcassets */,
 				0469B718248775D700A87511 /* LaunchScreen.storyboard */,
@@ -80,7 +83,6 @@
 				6AA14AF7D7C0A20BA284EC08 /* Pods-AlamofireDemo.debug.xcconfig */,
 				C638C4244D7413E45FEE5B44 /* Pods-AlamofireDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0469B71A248775D700A87511 /* LaunchScreen.storyboard in Resources */,
+				0469B722248799A600A87511 /* landscape_1.png in Resources */,
 				0469B717248775D700A87511 /* Assets.xcassets in Resources */,
 				0469B715248775D200A87511 /* Main.storyboard in Resources */,
 			);
