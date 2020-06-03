@@ -32,18 +32,43 @@ class ViewController: UIViewController {
 //
 //        postHandler()
         
-        downloadHandler(fileName: "pig.jpg")
+//        downloadHandler(fileName: "pig.jpg")
         
 //        uploadHandler()
         
-        
+        responseMethod()
         // Do any additional setup after loading the view.
+    }
+    
+    func responseMethod() {
+        //responseData和responseJSON 增加返回方式的示例  https://www.jianshu.com/p/068eeb72439a
+        
+        let url2 = self.urlStringGet
+        Alamofire.request(url2).responseData(completionHandler: { response in
+            guard let value = response.result.value else { return }
+            let result = try? JSONSerialization.jsonObject(with: value, options: [])
+            guard let res = result else { return }
+            let dictionary = res as! [String: Any]
+            print("dictionary = ", dictionary)
+            //输出：dictionary =  ["origin": 101.81.57.239]
+
+        })
+        
+        Alamofire.request(url2).responseJSON { response in
+            guard let value = response.result.value else { return }
+            let dictionary = value as! [String: Any]
+            print("dictionary = ", dictionary)
+            //输出：dictionary
+        }
+        
     }
     
     //GET方式
     func getHandler() {
+        //https://blog.csdn.net/lpCrazyBoy/article/details/88533287
         DispatchQueue.main.async(execute: {() in
             Alamofire.request(self.urlStringGet).responseJSON{response in
+                response.error
                 if let json = response.result.value {
                     print("JSON\(json)");
                 }
